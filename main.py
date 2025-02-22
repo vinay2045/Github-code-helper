@@ -20,9 +20,10 @@ from phi.storage.agent.sqlite import SqlAgentStorage
 load_dotenv()
 
 # --- Input fields for API keys and GitHub username ---
-default_gemini_api_key = "AIzaSyCI6iWIrWlPes7MgmcCpdc7jl5r_H3KCPo"
+default_gemini_api_key = "AIzaSyCI6iWlPes7MgmcCpdc7jl5r_H3KCPo"
 default_github_token = "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"
 default_github_username = "vinay2045"
+
 
 gemini_api_key = st.text_input("Gemini API Key", value=default_gemini_api_key)
 github_token = st.text_input("GitHub Token", value=default_github_token, type="password")
