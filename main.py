@@ -1,3 +1,8 @@
+# Patch inspect.getargspec for compatibility with Python 3.12
+import inspect
+if not hasattr(inspect, 'getargspec'):
+    inspect.getargspec = inspect.getfullargspec
+
 import streamlit as st
 import os
 import re
@@ -9,12 +14,14 @@ from phi.agent import Agent
 from phi.model.google import Gemini
 from phi.storage.agent.sqlite import SqlAgentStorage
 
+
+
 # Optionally load environment variables from .env if available
 load_dotenv()
 
 # --- Input fields for API keys and GitHub username ---
 default_gemini_api_key = "AIzaSyCI6iWIrWlPes7MgmcCpdc7jl5r_H3KCPo"
-default_github_token = "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"
+default_github_token = "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"
 default_github_username = "vinay2045"
 
 gemini_api_key = st.text_input("Gemini API Key", value=default_gemini_api_key)

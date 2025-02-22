@@ -1,4 +1,8 @@
+phidata
 streamlit
 python-dotenv
 requests
-phi
+google-generativeai
+sqlalchemy
+
+
