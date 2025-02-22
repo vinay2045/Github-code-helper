@@ -21,7 +21,7 @@ load_dotenv()
 
 # --- Input fields for API keys and GitHub username ---
 default_gemini_api_key = "AIzaSyCQl708ELeppbXa1oU_SyHaGkY5WmrRloc"
-default_github_token = "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"
+default_github_token = "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"
 default_github_username = "vinay2045"
 
 
