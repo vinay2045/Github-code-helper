@@ -4,5 +4,4 @@ python-dotenv
 requests
 google-generativeai
 sqlalchemy
-
-
+phi
